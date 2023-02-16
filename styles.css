@@ -29,8 +29,6 @@ body {
 }
 
 .intro > h1, h2, p {
-  width: fit-content;
-  margin: 0 auto;
   line-height: 1.5;
   font-weight: bold;
   text-shadow: 1px 1px #888888;
@@ -58,7 +56,16 @@ body {
     font-family: 'Montserrat';
     color: #fff;
     background-color: #144272 ;
+    border: 1px solid #fff;
     width: 100px;
     margin-top: 10px;
     cursor: pointer;
+    text-decoration: none;
+    transition: 1500ms;
 }
+
+#btn_1:hover {
+    opacity: 0.8;
+    transition: 1500ms;
+}
+
