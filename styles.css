@@ -69,3 +69,14 @@ body {
     transition: 1500ms;
 }
 
+/* Login Page Styles */
+
+#login_body {
+  background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-img_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+
