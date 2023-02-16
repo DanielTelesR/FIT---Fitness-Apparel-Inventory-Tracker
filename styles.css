@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/warehouse-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  width: 170px;
+  border-radius: 100%;
+}
+
+.intro {
+  color: #ECF9FF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.intro > h1, h2, p {
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: bold;
+  text-shadow: 1px 1px #888888;
+}
+
+.intro > h1, h2 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding-top: 10px;
+}
+
+.intro > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.intro > p {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+#btn_1 {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    color: #fff;
+    background-color: #144272 ;
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
