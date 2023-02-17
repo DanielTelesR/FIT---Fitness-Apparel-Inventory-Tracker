@@ -88,6 +88,7 @@
 
 .col-lg-4 {
   border-radius: 40px 15px 15px 15px;
+  padding: 15px;
 }
 
 .login_form h1 {
@@ -99,6 +100,12 @@
 #btn_login {
   background-color: #144272;
   color: #fff;
+  transition: 400ms;
+}
+
+#btn_login:hover {
+  font-size: large;
+  transition: 400ms;
 }
 
 .login_form .form-text {
@@ -109,5 +116,26 @@
   color: #144272;
 }
 
+/* Sign Up Page Styling */
 
+#signup_body {
+  background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-warehouse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.col-lg-8 {
+  border-radius: 40px 15px 15px 15px;
+  padding: 15px;
+}
+
+#btn_signUp {
+  background-color: #144272;
+  color: #fff;
+  transition: 400ms;
+}
+
+#btn_signUp:hover {
+  font-size: large;
+  transition: 400ms;
+}
