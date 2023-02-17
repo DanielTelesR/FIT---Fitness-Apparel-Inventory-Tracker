@@ -1,15 +1,19 @@
+/* General styling  */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-body {
+#index_body {
   background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-warehouse.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Lato', sans-serif;
 }
+
+/* First Page Styling */
 
 .logo {
   width: 120px;
@@ -28,25 +32,25 @@ body {
   margin: 0 auto;
 }
 
-.intro > h1, h2, p {
+.intro h1, h2, p {
   line-height: 1.5;
   font-weight: 700;
   text-shadow: 2px 2px #000;
 }
 
-.intro > h1 {
+.intro h1 {
     font-size: 2rem;
 }
 
-.intro > h2 {
+.intro h2 {
     font-size: 1.2rem;
     margin-bottom: 5px;
     letter-spacing: 5px;
     padding-top: 10px;
 }
 
-.intro > p {
-    font-size: 1.1rem;
+.intro p {
+    font-size: 1rem;
     padding: 5px;
 }
 
@@ -69,14 +73,41 @@ body {
     transition: 1500ms;
 }
 
-/* Login Page Styles */
+/* Login Page Styling */
 
 #login_body {
-  background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-img_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Montserrat', sans-serif;
   height: 100vh;
+  background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-warehouse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#login_body .container {
+  min-height: 100vh;
+}
+
+.col-lg-4 {
+  border-radius: 40px 15px 15px 15px;
+}
+
+.login_form h1 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+#btn_login {
+  background-color: #144272;
+  color: #fff;
+}
+
+.login_form .form-text {
+  margin-top: 15px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #144272;
+}
+
 
 
