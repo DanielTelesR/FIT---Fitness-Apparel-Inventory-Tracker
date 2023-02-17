@@ -8,11 +8,11 @@ body {
   background-image: url("/FIT---Fitness-Apparel-Inventory-Tracker/img/background-warehouse.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo {
-  width: 170px;
+  width: 120px;
   border-radius: 100%;
 }
 
@@ -30,19 +30,19 @@ body {
 
 .intro > h1, h2, p {
   line-height: 1.5;
-  font-weight: bold;
-  text-shadow: 1px 1px #888888;
+  font-weight: 700;
+  text-shadow: 2px 2px #000;
 }
 
-.intro > h1, h2 {
+.intro > h1 {
     font-size: 2rem;
-    letter-spacing: 5px;
-    padding-top: 10px;
 }
 
 .intro > h2 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+    letter-spacing: 5px;
+    padding-top: 10px;
 }
 
 .intro > p {
