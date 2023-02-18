@@ -129,13 +129,21 @@
   padding: 15px;
 }
 
-#btn_signUp {
+.signup_form label {
+  font-weight: 600;
+}
+
+.signup_form label:last-child {
+  font-weight: 500;
+}
+
+#btn_signup {
   background-color: #144272;
   color: #fff;
   transition: 400ms;
 }
 
-#btn_signUp:hover {
+#btn_signup:hover {
   font-size: large;
   transition: 400ms;
 }

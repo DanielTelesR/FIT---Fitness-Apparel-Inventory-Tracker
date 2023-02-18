@@ -46,9 +46,11 @@
     <div class="container d-flex align-items-center justify-content-center">
       <div class="col-lg-8 col-10 text-bg-light">
         <form
+          name="signup"
           action="#"
           method="post"
           class="signup_form row p-4 g-4 needs validation"
+          novalidate
         >
           <h1>Sign Up</h1>
           <h6 class="lead">Tell us about your company.</h6>
@@ -71,10 +73,14 @@
               type="email"
               class="form-control"
               id="email"
-              placeholder="E.g.: example@mail.com"
+              placeholder="e.g. example@mail.com"
               autocomplete="off"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               required
             />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
           </div>
           <div class="col-lg-6">
             <label for="phone" class="form-label">Phone Number</label>
@@ -85,6 +91,9 @@
               autocomplete="off"
               required
             />
+            <div class="invalid-feedback">
+              Please enter a valid phone number.
+            </div>
           </div>
           <div class="col-lg-6">
             <label for="address" class="form-label">Business Address</label>
@@ -95,6 +104,7 @@
               autocomplete="off"
               required
             />
+            <div class="invalid-feedback">Please enter a valid address.</div>
           </div>
           <div class="col-lg-6">
             <label for="city" class="form-label">City</label>
@@ -105,6 +115,7 @@
               autocomplete="off"
               required
             />
+            <div class="invalid-feedback">Please enter a valid city name.</div>
           </div>
           <div class="col-lg-6">
             <label for="country" class="form-label">Country</label>
@@ -118,6 +129,7 @@
               <option value="Canada">Canada</option>
               <option value="Other">Other</option>
             </select>
+            <div class="invalid-feedback">Please select a valid country.</div>
           </div>
           <div class="col-lg-6">
             <label for="username" class="form-label">Username</label>
@@ -129,6 +141,7 @@
               autocomplete="off"
               required
             />
+            <div class="invalid-feedback">Please choose a valid username.</div>
           </div>
           <div class="col-lg-6">
             <label for="password" class="form-label">Password</label>
@@ -136,11 +149,14 @@
               type="password"
               class="form-control"
               id="password"
-              placeholder="Choose a password (e.g. abc1234567)"
+              placeholder="e.g. ABC123"
               autocomplete="off"
               pattern="[A-Z]{3}[0-9]{3}"
               required
             />
+            <div class="invalid-feedback">
+              Password must contain 3 numbers followed by 3 letters.
+            </div>
           </div>
           <div class="col-lg-6">
             <label for="confirm_password" class="form-label"
@@ -155,12 +171,15 @@
               pattern="[A-Z]{3}[0-9]{3}"
               required
             />
+            <div class="invalid-feedback">
+              The password confirmation does not match.
+            </div>
           </div>
           <div class="col-lg-12">
             <input
               type="checkbox"
               id="terms_check"
-              class="form-check-input me-1"
+              class="form-check-input me-1 border-dark-subtle"
               required
             />
             <label for="terms_check" class="form-label"
@@ -170,7 +189,7 @@
           <div class="d-flex justify-content-center ms-auto">
             <input
               type="submit"
-              id="btn_signUp"
+              id="btn_signup"
               class="btn"
               value="Create Account"
             />
