@@ -86,7 +86,7 @@
   min-height: 100vh;
 }
 
-.col-lg-4 {
+#login_body .col-lg-4 {
   border-radius: 40px 15px 15px 15px;
   padding: 15px;
 }
@@ -124,7 +124,7 @@
   background-repeat: no-repeat;
 }
 
-.col-lg-8 {
+#signup_body .col-lg-8 {
   border-radius: 40px 15px 15px 15px;
   padding: 15px;
 }
