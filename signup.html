@@ -32,30 +32,35 @@
       defer
     ></script>
 
+    <!-- Scripts -->
+    <script
+      src="/FIT---Fitness-Apparel-Inventory-Tracker/scripts.js"
+      defer
+    ></script>
+
     <!-- Custom CSS Styles -->
     <link
       rel="stylesheet"
       href="/FIT---Fitness-Apparel-Inventory-Tracker/styles.css"
     />
 
-    <!-- Scripts -->
-    <script src="scripts.js"></script>
+    <!-- Title -->
     <title>FIT - Fitness Apparel Inventory Tracker</title>
   </head>
   <body id="signup_body" class="py-5">
-    <div class="container d-flex align-items-center justify-content-center">
+    <main class="container d-flex align-items-center justify-content-center">
       <div class="col-lg-8 col-10 text-bg-light">
         <form
           name="signup"
           action="#"
-          method="get"
+          method="post"
           class="signup_form row p-4 g-4 needs-validation"
           novalidate
         >
           <h1>Sign Up</h1>
           <h6 class="lead">Tell us about your company.</h6>
           <div class="col-lg-6">
-            <label for="co_name" class="form-label">Company name</label>
+            <label for="co_name" class="form-label">Company Name</label>
             <input
               type="text"
               class="form-control"
@@ -155,7 +160,7 @@
               required
             />
             <div class="invalid-feedback">
-              Password must contain 3 numbers followed by 3 letters.
+              Password must contain 3 uppercase letters followed by 3 numbers.
             </div>
           </div>
           <div class="col-lg-6">
@@ -182,20 +187,23 @@
               class="form-check-input me-1 border-dark-subtle"
               required
             />
-            <label for="terms_check" class="form-label"
+            <label for="terms_check" class="form-label check"
               >I agree to the terms and conditions.</label
             >
+            <div class="invalid-feedback">
+              You must agree to the terms and conditions.
+            </div>
           </div>
           <div class="d-flex justify-content-center ms-auto">
             <input
               type="submit"
+              value="Create Account"
               id="btn_signup"
               class="btn"
-              value="Create Account"
             />
           </div>
         </form>
       </div>
-    </div>
+    </main>
   </body>
 </html>

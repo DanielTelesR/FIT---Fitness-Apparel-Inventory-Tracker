@@ -133,8 +133,9 @@
   font-weight: 600;
 }
 
-.signup_form label:last-child {
+.signup_form label.check {
   font-weight: 500;
+  text-decoration: underline;
 }
 
 #btn_signup {
