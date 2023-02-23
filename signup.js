@@ -12,6 +12,7 @@
         if (!form.checkValidity()) {
           form.classList.add("was-validated");
         } else {
+          createAccount();
           form.classList.remove("was-validated");
           form.reset();
         }
@@ -41,4 +42,40 @@ function validatePassword() {
     passFeedback.innerText("Please confirm your password.");
   }
   return true;
+}
+
+/* Added implementation for creating new accounts */
+
+const btn_CreateAccount = document.getElementById("btn_signup");
+
+function getLocalStorage() {
+  return JSON.parse(localStorage.getItem("db_accounts")) ?? [];
+}
+
+function setLocalStorage() {
+  localStorage.setItem("db_accounts", JSON.stringify(db_accounts));
+}
+
+function accountFeedback() {
+  const accountCreated = document.createElement("p");
+  accountCreated.innerHTML = "Your account has been created.";
+  document.querySelector(".signup_form").appendChild(accountCreated);
+}
+
+function createAccount() {
+  const account = {
+    coName: document.getElementById("co-name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    address: document.getElementById("address").value,
+    city: document.getElementById("city").value,
+    country: document.getElementById("country").value,
+    username: document.getElementById("username").value,
+    key: document.getElementById("password").value,
+  };
+
+  const db_accounts = getLocalStorage();
+  db_accounts.push(account);
+  setLocalStorage(account);
+  accountFeedback();
 }
