@@ -48,57 +48,55 @@
     <title>FIT - Fitness Apparel Inventory Tracker</title>
   </head>
   <body id="login_body">
-    <main>
-      <div class="container d-flex align-items-center justify-content-center">
-        <div class="col-lg-4 col-10 text-bg-light">
-          <form
-            action="#"
-            method="get"
-            class="login_form row p-4 needs-validation"
-            novalidate
-          >
-            <h1>Welcome Back!</h1>
-            <div class="col-12">
-              <div class="input-group mb-3 has-validation">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="user_login"
-                  autocomplete="off"
-                  placeholder="Username"
-                  required
-                />
-                <span class="input-group-text">@</span>
-                <div class="invalid-feedback">Please enter your username.</div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="input-group mb-3 has-validation">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="pass_login"
-                  placeholder="Password"
-                  required
-                />
-                <i class="bi bi-key input-group-text"></i>
-                <div class="invalid-feedback">Please enter your password.</div>
-              </div>
-            </div>
-            <div>
+    <main class="container d-flex align-items-center justify-content-center">
+      <div class="col-lg-4 col-10 text-bg-light">
+        <form
+          action="#"
+          method="post"
+          class="login_form row p-4 needs-validation"
+          novalidate
+        >
+          <h1>Welcome Back!</h1>
+          <div class="col-12">
+            <div class="input-group mb-3">
               <input
-                type="submit"
-                class="input-group mb-3 btn"
-                value="Continue"
-                id="btn_login"
+                type="text"
+                class="form-control"
+                id="user_login"
+                autocomplete="off"
+                placeholder="Username"
+                required
               />
-              <div class="form-text">
-                <h6>Don't have an account?</h6>
-                <a href="signup.html">Sign Up</a>
-              </div>
+              <span class="input-group-text">@</span>
+              <div class="invalid-feedback">Please enter your username.</div>
             </div>
-          </form>
-        </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="pass_login"
+                placeholder="Password"
+                required
+              />
+              <i class="bi bi-key input-group-text"></i>
+              <div class="invalid-feedback">Please enter your password.</div>
+            </div>
+          </div>
+          <div>
+            <input
+              type="submit"
+              class="input-group mb-3 btn"
+              value="Continue"
+              id="btn_login"
+            />
+            <div class="form-text">
+              <h6>Don't have an account?</h6>
+              <a href="signup.html">Sign Up</a>
+            </div>
+          </div>
+        </form>
       </div>
     </main>
   </body>
