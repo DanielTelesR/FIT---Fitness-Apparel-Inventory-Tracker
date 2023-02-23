@@ -22,3 +22,23 @@
     );
   });
 })();
+
+/* Added event listeners to "password" and "confirm password" fields to implement custom validation for ensuring the password and its confirmation match.*/
+
+const password = document.getElementById("password");
+const confPassword = document.getElementById("confirm-password");
+const passFeedback = document.getElementById("password-feedback");
+
+confPassword.addEventListener("input", validatePassword);
+
+function validatePassword() {
+  if (password.value !== confPassword.value) {
+    confPassword.setCustomValidity("Password confirmation does not match.");
+    passFeedback.innerText = "Password confirmation does not match.";
+    return false;
+  } else {
+    passFeedback.setCustomValidity("");
+    passFeedback.innerText("Please confirm your password.");
+  }
+  return true;
+}
