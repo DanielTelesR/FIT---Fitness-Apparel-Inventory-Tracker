@@ -50,11 +50,11 @@ function validatePassword() {
 const btn_CreateAccount = document.getElementById("btn_signup");
 
 function getLocalStorage() {
-  return JSON.parse(localStorage.getItem("db_accounts")) ?? [];
+  return JSON.parse(localStorage.getItem("db_Accounts")) ?? [];
 }
 
-function setLocalStorage(db_accounts) {
-  return localStorage.setItem("db_accounts", JSON.stringify(db_accounts));
+function setLocalStorage(db_Accounts) {
+  return localStorage.setItem("db_Accounts", JSON.stringify(db_Accounts));
 }
 
 function createAccount() {
@@ -69,7 +69,7 @@ function createAccount() {
     key: document.getElementById("password").value,
   };
 
-  const db_accounts = getLocalStorage();
-  db_accounts.push(account);
-  setLocalStorage(db_accounts);
+  const db_Accounts = getLocalStorage();
+  db_Accounts.push(account);
+  setLocalStorage(db_Accounts);
 }
