@@ -68,7 +68,7 @@
                 required
               />
               <span class="input-group-text">@</span>
-              <div class="invalid-feedback">Please enter your username.</div>
+              <div class="invalid-feedback">Please enter a valid username.</div>
             </div>
           </div>
           <div class="col-12">
@@ -78,10 +78,11 @@
                 class="form-control"
                 id="pass_login"
                 placeholder="Password"
+                pattern="[A-Z]{3}[0-9]{3}"
                 required
               />
               <i class="bi bi-key input-group-text"></i>
-              <div class="invalid-feedback">Please enter your password.</div>
+              <div class="invalid-feedback">Please enter a valid password.</div>
             </div>
           </div>
           <div>

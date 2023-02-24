@@ -148,3 +148,10 @@
   font-size: large;
   transition: 400ms;
 }
+
+/* System Page styling */
+
+#system_body img {
+  width: 70px;
+  border-radius: 100%;
+}

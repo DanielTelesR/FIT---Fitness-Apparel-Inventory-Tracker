@@ -13,7 +13,8 @@
           form.classList.add("was-validated");
         } else {
           form.classList.remove("was-validated");
-          form.reset();
+          window.location.href =
+            "/FIT---Fitness-Apparel-Inventory-Tracker/system.html";
         }
         event.preventDefault();
         event.stopPropagation();
