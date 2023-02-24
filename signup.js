@@ -14,7 +14,8 @@
         } else {
           createAccount();
           form.classList.remove("was-validated");
-          form.reset();
+          window.location.href =
+            "/FIT---Fitness-Apparel-Inventory-Tracker/login.html";
         }
         event.preventDefault();
         event.stopPropagation();
@@ -52,14 +53,8 @@ function getLocalStorage() {
   return JSON.parse(localStorage.getItem("db_accounts")) ?? [];
 }
 
-function setLocalStorage() {
-  localStorage.setItem("db_accounts", JSON.stringify(db_accounts));
-}
-
-function accountFeedback() {
-  const accountCreated = document.createElement("p");
-  accountCreated.innerHTML = "Your account has been created.";
-  document.querySelector(".signup_form").appendChild(accountCreated);
+function setLocalStorage(db_accounts) {
+  return localStorage.setItem("db_accounts", JSON.stringify(db_accounts));
 }
 
 function createAccount() {
@@ -76,6 +71,5 @@ function createAccount() {
 
   const db_accounts = getLocalStorage();
   db_accounts.push(account);
-  setLocalStorage(account);
-  accountFeedback();
+  setLocalStorage(db_accounts);
 }
