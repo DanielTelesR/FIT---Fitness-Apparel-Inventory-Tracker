@@ -34,7 +34,7 @@
 
     <!-- Scripts -->
     <script
-      src="/FIT---Fitness-Apparel-Inventory-Tracker/system.js"
+      src="/FIT---Fitness-Apparel-Inventory-Tracker/scripts/system.js"
       defer
     ></script>
 
@@ -107,7 +107,7 @@
           name="form1"
           action="#"
           method="POST"
-          class="row g-3 needs-validation"
+          class="system_form row g-3 needs-validation"
           novalidate
         >
           <div class="col-md-6">
@@ -119,84 +119,91 @@
               <option value="Sweatpant">Sweatpant</option>
               <option value="Hoodie">Hoodie</option>
             </select>
-            <div class="invalid-feedback">Enter a valid product.</div>
+            <div class="invalid-feedback">Select a valid product.</div>
           </div>
           <div class="col-md-6">
-            <label for="codigo" class="form-label">Código</label>
+            <label for="code" class="form-label">Code Number</label>
             <input
               type="text"
               class="form-control"
-              id="codigo"
-              placeholder="Exemplo: J32"
+              id="code"
+              placeholder="e.g. J32"
               pattern="[A-Z][0-9]{2}"
               required
             />
-            <div class="invalid-feedback" id="feedbackCodigo">
-              Informe o código corretamente.
+            <div class="invalid-feedback" id="codeFeedback">
+              Please enter a valid code.
             </div>
           </div>
           <div class="col-md-6">
-            <label for="tamanho" class="form-label">Tamanho</label>
-            <select id="tamanho" class="form-select" required>
-              <option value="" disabled selected>Selecione o tamanho...</option>
-              <option value="P">P</option>
+            <label for="size" class="form-label">Size</label>
+            <select id="size" class="form-select" required>
+              <option value="" disabled selected>Select the size...</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
               <option value="M">M</option>
-              <option value="G">G</option>
-              <option value="GG">GG</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
             </select>
-            <div class="invalid-feedback">Informe o tamanho corretamente.</div>
+            <div class="invalid-feedback">Select a valid size.</div>
           </div>
           <div class="col-md-6">
-            <label for="cor" class="form-label">Cor</label>
-            <select id="cor" class="form-select" required>
-              <option value="" disabled selected>Selecione a cor...</option>
-              <option value="Branca">Branca</option>
-              <option value="Preta">Preta</option>
+            <label for="color" class="form-label">Color</label>
+            <select id="color" class="form-select" required>
+              <option value="" disabled selected>Select the color...</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Pink">Pink</option>
+              <option value="Gray">Gray</option>
             </select>
-            <div class="invalid-feedback">Informe a cor corretamente.</div>
+            <div class="invalid-feedback">Please select a valid color.</div>
           </div>
           <div class="col-md-6">
-            <label for="idade" class="form-label">Idade</label>
-            <select id="idade" class="form-select" required>
-              <option value="" disabled selected>Selecione a idade...</option>
-              <option value="Adulto">Adulto</option>
-              <option value="Infantil">Infantil</option>
+            <label for="age" class="form-label">Age</label>
+            <select id="age" class="form-select" required>
+              <option value="" disabled selected>Select the age...</option>
+              <option value="Adult">Adult</option>
+              <option value="Teenager">Teenager</option>
+              <option value="Child">Child</option>
             </select>
-            <div class="invalid-feedback">Informe a idade corretamente.</div>
+            <div class="invalid-feedback">Select a valid age.</div>
           </div>
           <div class="col-md-6">
-            <label for="genero" class="form-label">Gênero</label>
-            <select id="genero" class="form-select" required>
-              <option value="" disabled selected>Selecione o gênero...</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Feminino">Feminino</option>
+            <label for="gender" class="form-label">Gender</label>
+            <select id="gender" class="form-select" required>
+              <option value="" disabled selected>Select the gender...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
               <option value="Unissex">Unissex</option>
             </select>
-            <div class="invalid-feedback">Informe o gênero corretamente.</div>
+            <div class="invalid-feedback">Select a gender.</div>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <input
               type="submit"
               class="btn btn-primary me-md-2"
-              value="Inserir"
-              id="btnInserir"
+              value="Add"
+              id="btnAdd"
             />
           </div>
         </form>
 
         <hr />
 
-        <table class="table table-striped" id="tabela">
+        <table class="table table-responsive table-dark" id="table">
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Produto</th>
-              <th scope="col">Código</th>
-              <th scope="col">Tamanho</th>
-              <th scope="col">Cor</th>
-              <th scope="col">Idade</th>
-              <th scope="col">Gênero</th>
-              <th scope="col">Ação</th>
+              <th scope="col">Product</th>
+              <th scope="col">Code</th>
+              <th scope="col">Size</th>
+              <th scope="col">Color</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody></tbody>

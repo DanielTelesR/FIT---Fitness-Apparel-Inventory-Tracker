@@ -155,3 +155,7 @@
   width: 70px;
   border-radius: 100%;
 }
+
+.system_form label {
+  font-weight: 600;
+}
