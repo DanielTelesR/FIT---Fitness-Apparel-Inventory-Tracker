@@ -36,7 +36,7 @@ confPassword.addEventListener("input", validatePassword);
 function validatePassword() {
   if (password.value != confPassword.value) {
     confPassword.setCustomValidity("Password confirmation does not match.");
-    passFeedback.innerText = "Password confirmation does not match.";
+    passFeedback.innerText("Password confirmation does not match.");
     return false;
   } else {
     confPassword.setCustomValidity("");
